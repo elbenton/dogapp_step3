@@ -9,18 +9,30 @@
   <body>
     <h1>Dogs on Demand</h1>
     <h2>Dog pictures for when you're having a dog-gone day.</h2>
-    <form id="formNumberOfDogsId">
-      <div class="formNumberOfDogsClass">
-        <h3>Click for a dog!</h3>
+      <div class="breedOfDogClass">
+        <h3>Type in a breed of hound!</h3>
       </div>
-      <div id="results container">
-          <input type="submit" value="Fetch!">
-    </form>
+      <form id="formInput">
+        <input 
+          type="text" 
+          id="inputBreedId" 
+          class="inputBreedClass" 
+          placeholder="Ibizan, basset, walker..."
+          /required>
+        <div class="submitButton">
+        <input 
+          type="submit" 
+          value="Fetch!"
+          class="getBreed"
+          >
+        </div>
+      <div id="results" class="container">
       <section class="results hidden">
         <h3>It's a dog!</h3>
         <img class="dog-img" alt="A random photo of a dog">
         </section>
       </div>
+      </form>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
